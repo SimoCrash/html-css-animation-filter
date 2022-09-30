@@ -96,16 +96,53 @@
     border-radius: 15px;
 }
 
+/* es.9 */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: all 3s;
 }
+
+.ex-9-img:hover {
+    filter: invert(100%) opacity(30%);
+    border-radius: 20px;
+    margin: 25px 50px;
+    width: 600px;
+}
+
+/* es.10 */
 .ex-10-icon {
     font-size: 60px;
+    animation: spin 1s linear infinite;
 }
+
+@keyframes spin {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+
+/* es.11 */
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover {
+    animation: go 3s linear;
+}
+
+@keyframes go {
+    0% {
+        transform: rotate(-360deg);
+    }
+    90% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -126,6 +163,8 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+    transition: all 2s;
+    
 }
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
@@ -134,4 +173,11 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+    transition: all 2s;
+}
+
+.ex-12-button:hover {
+    position: absolute;
+    top:-10px;
+    left: 15%;
 }
